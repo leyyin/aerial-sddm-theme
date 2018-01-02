@@ -43,3 +43,7 @@ find "$DIR_PLAYLIST_DAY" -maxdepth 1 -type f > playlist_day_offline.m3u
 
 echo "Generating playlist file playlist_night_offline.m3u"
 find "$DIR_PLAYLIST_NIGHT" -maxdepth 1 -type f > playlist_night_offline.m3u
+
+echo "Generating combined playlist playlist_offline.m3u"
+cat playlist_day_offline.m3u > playlist_offline.m3u
+cat playlist_night_offline.m3u >> playlist_offline.m3u

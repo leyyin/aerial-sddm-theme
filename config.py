@@ -14,8 +14,7 @@ def get_json_videos():
 def get_nigh_and_day_videos():
     videos = {
         "night": [],
-        "day": [
-        ]
+        "day": []
     }
 
     for json_object in get_json_videos():
@@ -29,3 +28,4 @@ def get_nigh_and_day_videos():
                 print("Unknown time of day %s" % asset["timeOfDay"])
 
     return videos
+
