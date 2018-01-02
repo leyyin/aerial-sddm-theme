@@ -2,3 +2,10 @@ Main.qmlc
 
 /playlist_videos/*
 !/playlist_videos/*.md
+
+# Editors
+.idea/
+
+# Offline playlists
+playlist_night_offline.m3u
+playlist_day_offline.m3u
